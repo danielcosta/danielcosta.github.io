@@ -2,9 +2,13 @@ name: Deploy
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - "github-actions-to-deploy"
   pull_request:
-    branches: [main]
+    branches:
+      - main
+      - "github-actions-to-deploy"
 
 jobs:
   deploy:
